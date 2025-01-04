@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxuryWear</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Collection.html">Collection</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html">
+                    <button class="btn logout">logout</button>
+                </a>
+            </div>
+        </nav>
+        <nav class="container">
+            <div class="logo">TrendyWear</div>
+            <button class="cart-button" id="cartButton">Cart (0)</button>
+        </nav>
+    </header>
+
+    <div class="offer-banner">
+        <div class="offer-text">Welcome & Get 30% For 1st Purchase!!</div>
+    </div>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <video class="hero-video" autoplay loop muted playsinline>
+            <source src="https://videos.pexels.com/video-files/6121230/6121230-uhd_2732_1440_25fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h1>Urban Style Without Limits</h1>
+            <p>Discover the collection that defines the streets</p>
+            <button class="cta-button" id="ctaButton">View Products</button>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('ctaButton').addEventListener('click', function() {
+            window.location.href = 'Collection.html';
+        });
+    </script>
+</body>
+</html>
